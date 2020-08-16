@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="nes-container is-dark with-title">
+                <p class="title" *ngIf="officer === 'police-officer'; then thenBlock else elseBlock"></p>
+                <ng-template #thenBlock>Can you check the police officer's warrant card?</ng-template>
+                <ng-template #elseBlock>Can you check the PCSO's designation card?</ng-template>
+
+                <div class="input-group">
+                  <label>
+                      <input type="radio" class="nes-radio" (click)="onIdentification(true)" />
+                      <span>Yes</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="nes-radio" (click)="onIdentification(false)"/>
+                      <span>No</span>
+                    </label>
+                </div>
+              </div>
+        </div>
+
+        <ng-template [ngIf]="identification !== ''">
+            <div class="col-sm-12" [ngSwitch]="identification">
+                <div class="nes-container is-dark" *ngSwitchCase="'none'">
+                    <p>Politely tell them to fuck off and leave you in peace.</p>
+                    <a routerLink="/home" routerLinkActive="active">
+                        <button class="nes-btn">Job's a good'n</button>     
+                      </a>
+                </div>
+
+                <div class="nes-container is-dark" *ngSwitchDefault>
+                    <p *ngIf="officer === 'police-officer'; then thenBlock else elseBlock"></p>
+                    <ng-template #thenBlock>Check the warrant card</ng-template>
+                    <ng-template #elseBlock>Check the designation card</ng-template>
+                        <label>Name:
+                        <input class="col-sm-12" [(ngModel)]="name" placeholder="PC Plod"/>
+                      </label>
+                      <label>Number:
+                        <input class="col-sm-12" [(ngModel)]="number" placeholder="123456678"/>
+                      </label>
+                      <label>station:
+                        <input class="col-sm-12" [(ngModel)]="station" placeholder="Brixton"/>
+                      </label>
+
+                      <p *ngIf="name && number && station">You have selected {{name}} number {{number}} from station {{station}}, is this correct?</p>
+                      <p *ngIf="!name && number && station">You have selected number {{number}} from station {{station}}, is this correct?</p>
+                      <p *ngIf="name && !number && station">You have selected {{name}} from station {{station}}, is this correct?</p>
+                      <p *ngIf="name && number && !station">You have selected {{name}} number {{number}}, is this correct?</p>
+                      <p *ngIf="!name && !number && station">You have selected an officer from station {{station}}, is this correct?</p>
+                      <p *ngIf="name && !number && !station">You have selected {{name}}, is this correct?</p>
+                      <p *ngIf="!name && number && !station">You have selected number {{number}}, is this correct?</p>
+                      <button class="nes-btn" disabled>Okay</button>     
+                </div>           
+            </div>
+        </ng-template>
+    </div>
+</div>

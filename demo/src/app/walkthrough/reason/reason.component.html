@@ -1,0 +1,86 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="nes-container is-dark with-title">
+                <p class="title">Why have you been stopped?</p>
+                <div class="input-group">
+                  <label>
+                      <input type="radio" class="nes-radio" (click)="onReason('stop-and-question')" />
+                      <span>Stop-and-question</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="nes-radio" (click)="onReason('stop-and-search')"/>
+                      <span>Stop-and-search</span>
+                    </label>
+                </div>
+              </div>
+        </div>
+
+        <ng-template [ngIf]="selectedReason !== ''">
+            <div class="col-sm-12">
+                <div *ngIf="selectedReason !== 'stop-and-question' && selectedReason !== 'stop-and-search'; else elseBlock">
+                    <div class="nes-container is-dark">
+                        <p>We don't have other legal advice, sorry!</p>
+                        <p><strong>You're on your own now champ!</strong></p>
+                        <a routerLink="/home" routerLinkActive="active">
+                            <button class="nes-btn">Home</button>     
+                          </a>
+                    </div>
+                </div>
+                <ng-template #elseBlock>
+                    <div class="nes-container">
+                        <blockquote cite="https://www.gov.uk/police-powers-to-stop-and-search-your-rights">
+                            <p>The police can stop and question you at any time.</p>
+                            <p>
+                                A police community support officer (PCSO) must be in uniform when they stop and question you.
+                                A police officer doesn’t always have to be in uniform but if they’re not wearing uniform they must show you their warrant card.
+                            </p>
+                            <footer><a target="_blank" href="https://www.gov.uk/police-powers-to-stop-and-search-your-rights">GOV.UK</a></footer>
+                        </blockquote>
+                    </div>
+                </ng-template>             
+            </div>
+
+            <div class="col-sm-12">
+                <div class="nes-container is-dark with-title">
+                    <p class="title">Have you been stopped by a PCSO or a police officer?</p>
+                    <div class="input-group">
+                        <label>
+                            <input type="radio" class="nes-radio" (click)="onOfficer('out-of-uniform-pcso')" />
+                            <span>Out-of-uniform PCSO</span>
+                          </label>
+                          <label>
+                            <input type="radio" class="nes-radio" (click)="onOfficer('in-uniform-pcso')" />
+                            <span>In-uniform PCSO</span>
+                          </label>
+                        <label>
+                          <input type="radio" class="nes-radio" (click)="onOfficer('police-officer')"/>
+                          <span>Police officer</span>
+                        </label>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-12" [ngSwitch]="selectedOfficer">
+                <div class="nes-container is-dark" *ngSwitchCase="'out-of-uniform-pcso'">
+                    <p>Politely tell them to fuck off and leave you in peace.</p>
+                    <a routerLink="/home" routerLinkActive="active">
+                        <button class="nes-btn">Job's a good'n</button>     
+                      </a>
+                </div>
+                <div class="nes-container is-dark" *ngSwitchCase="'in-uniform-pcso'">
+                    <p>You have selected in-uniform PCSO, is this correct?</p>
+                    <a [routerLink]="[selectedReason, 'officer', 'in-uniform-pcso',  'identity']" routerLinkActive="active">
+                      <button class="nes-btn">Okay</button>     
+                    </a>
+                  </div>
+                  <div class="nes-container is-dark" *ngSwitchCase="'police-officer'">
+                    <p>You have selected police officer, is this correct?</p>
+                    <a [routerLink]="[selectedReason, 'officer', 'police-officer', 'identity']" routerLinkActive="active">
+                      <button class="nes-btn">Okay</button>     
+                    </a>
+                  </div>
+              </div>
+        </ng-template>
+      </div>
+</div>

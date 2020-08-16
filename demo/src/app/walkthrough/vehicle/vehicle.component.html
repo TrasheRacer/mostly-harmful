@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="nes-container is-dark with-title">
+                <p class="title">Are you driving a car?</p>
+                <div class="input-group">
+                  <label>
+                      <input type="radio" class="nes-radio" (click)="onVehicle('none')" />
+                      <span>No</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="nes-radio" (click)="onVehicle('car')"/>
+                      <span>Yes</span>
+                    </label>
+                </div>
+              </div>
+        </div>
+
+        <ng-template [ngIf]="selectedVehicle !== ''">
+            <div class="col-sm-12" [ngSwitch]="selectedVehicle">
+              <div class="nes-container is-dark" *ngSwitchCase="'car'">
+                <p>We don't have legal advice for drivers yet, sorry!</p>
+                <p><strong>You're on your own now champ!</strong></p>
+                <a routerLink="/home" routerLinkActive="active">
+                    <button class="nes-btn">Home</button>     
+                  </a>
+              </div>
+              <div class="nes-container is-dark" *ngSwitchCase="'none'">
+                <p>You have not selected a vehicle, is this correct?</p>
+                <a [routerLink]="['none', 'reason']" routerLinkActive="active">
+                  <button class="nes-btn">Okay</button>     
+                </a>
+              </div>
+            </div>
+        </ng-template>
+      </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="nes-container is-dark with-title">
+                <p class="title">Where are you?</p>
+                <div class="input-group">
+                  <label>
+                      <input type="radio" class="nes-radio" (click)="onCountry('UK')" />
+                      <span>UK</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="nes-radio" (click)="onCountry('other')"/>
+                      <span>Somewhere else</span>
+                    </label>
+                </div>
+              </div>
+        </div>
+
+        <ng-template [ngIf]="selectedCountry !== 'none'">
+            <div class="col-sm-12" [ngSwitch]="selectedCountry">
+              <div class="nes-container is-dark" *ngSwitchCase="'other'">
+                <p>We don't have legal advice for other countries yet, sorry!</p>
+                <p><strong>You're on your own now champ!</strong></p>
+                <a routerLink="/home" routerLinkActive="active">
+                  <button class="nes-btn">Home</button>     
+                </a>
+              </div>
+              <div class="nes-container is-dark" *ngSwitchDefault>
+                <p>You have selected {{selectedCountry}}, is this correct?</p>
+                <a [routerLink]="[selectedCountry, 'vehicle']" routerLinkActive="active">
+                  <button class="nes-btn">Okay</button>     
+                </a>
+              </div>
+            </div>
+        </ng-template>
+      </div>
+</div>

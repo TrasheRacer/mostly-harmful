@@ -1,0 +1,19 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">UNDER CONSTRUCTION</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <figure>
+        <img src="./../../assets/gifs/skeleton.gif" alt="i've-seen-footage">
+        <figcaption>
+          <p>You're on your own for now champ!</p>
+        </figcaption>
+       </figure>
+    </div>
+  </ng-template>
+  
+  <button type="button" class="nes-btn is-large is-error" (click)="open(content)">PANIC</button>

@@ -1,0 +1,75 @@
+<div class="container-fluid text-center tiled-background">
+    <div class="row">
+      <div class="col-sm">
+        <div class="nes-container is-rounded is-white">
+          <h5>An experiement in anti-racist <button (click)="onClickSolidarity()" type="button" class="nes-btn is-primary">Solidarity</button></h5>
+        </div>
+
+        <i class="nes-bulbasaur"></i>
+        <i class="nes-charmander"></i>
+        <i class="nes-squirtle"></i>
+        <i class="nes-kirby"></i>
+      </div>
+    </div>
+  
+    <div class="row justify-content-md-center">
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body text-center">
+            <a routerLink="/walkthrough/country" routerLinkActive="active">
+              <p class="card-text">Are the police bothering you right now?</p>
+              <button type="button" class="nes-btn is-large is-error">DON'T PANIC</button>          
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center bg-light">
+      <div class="card-deck">
+        <div class="card mb-4 box-shadow align-items-center">
+          <img class="card-img-top" src="./../assets/gifs/rights.gif" alt="rights">
+          <div class="card-body">
+            <h5 class="card-title">Try it out!</h5>
+            <p class="card-text">
+              Use our interactive walkthrough to get the best<sup>[1]</sup> legal advice on how to properly deal with the police.
+            </p>
+          </div>
+        </div>
+  
+        <div class="card mb-4 box-shadow align-items-center">
+          <img class="card-img-top" src="./../assets/gifs/evidence.gif" alt="evidence">
+          <div class="card-body">
+            <h5 class="card-title">Gather your evidence <i>(coming soon)</i>!</h5>
+            <p class="card-text">
+              Record any data which might come in handy later, in anonymised format on our public database.
+            </p>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow align-items-center">
+          <img class="card-img-top" src="./../assets/gifs/revolution.gif" alt="revolution">
+          <div class="card-body">
+            <h5 class="card-title">Stay safe <i>(coming soon)</i>!</h5>
+            <p class="card-text">
+              Keep friends and loved ones updated with your location, if you expect to have dealings with the police.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<footer class="footer ">
+  <div class="container nes-container is-rounded is-dark">
+      <div class="content footer-content has-text-centered">
+      <p>[1] <i>we're working on it</i></p>
+      <p>Music by Death Grips, Angelic Upstarts, and Run The Jewels</p>
+
+      <a routerLink="/about" routerLinkActive="active">
+        <button type="button" class="nes-btn is-large is-warning">About</button>          
+      </a>
+    </div>
+  </div>
+</footer>

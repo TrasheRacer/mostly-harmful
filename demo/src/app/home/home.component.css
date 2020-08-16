@@ -1,0 +1,16 @@
+.tiled-background {
+    background-image: url("./../../assets/images/flag.jpg");
+    background-repeat: repeat;
+  }
+
+  .is-white {
+      background-image: none;
+      background-color: antiquewhite;
+  }
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    min-height: 200px;
+}

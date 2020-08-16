@@ -47,6 +47,7 @@ This license lets others distribute, remix, adapt, and build upon this work, eve
 ## Contributing guidelines
 Contributors to this project should be aware that those most affected by police oppression are marginalised groups such as:
 * People of Colour
+* LGBT* people
 * Sex workers
 * People with mental health issues
 * Transgender people
