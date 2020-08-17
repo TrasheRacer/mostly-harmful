@@ -1,46 +1,17 @@
  ---------------------------------------------------------------------------
 / ------------------------------------------------------------------------- \
 ||                                                                         ||
-|| Header: previous view in flow (not present on home view)                ||
-||                                                                         ||
-||-------------------------------------------------------------------------||
-||                                                                         ||
-|| Display: interactive glyph representing selection in main flow such as  ||
-||   * charecter                                                           ||
-||   * setting                                                             ||
-||   * vehicle                                                             ||
-||   * opponents                                                           ||
-||   * allies                                                              ||
-||   as well as in other flows like                                        ||
-||   * flow selection in the home view                                     ||
-||   * state and language selection in the settings flow                   ||
-||   * external GitHub link selection in the about flow                    ||
-||   * external email address link selection in the help flow              ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
-||-------------------------------------------------------------------------||
-||                                                                         ||
-|| Selection: allow the user to interact by selecting                      ||
-||   * charecter traits (POC, female, ...)                                 ||
-||   * settings (street, highway, border control, ...)                     ||
-||   * ...                                                                 ||
-||                                                                         ||
-||                                                                         ||
-||                                                                         ||
+|| Display: interactive glyph representing the selected flow               ||
+||   * start                                                               ||
+||     -> old-school arcade machine                                        ||
+||   * help                                                                ||
+||     -> question mark                                                    ||
+||   * about                                                               ||
+||     -> project logo                                                     ||
+||   * settings                                                            ||
+||     -> cog                                                              ||
+||   * default                                                             ||
+||     -> ?                                                                ||
 ||                                                                         ||
 ||                                                                         ||
 ||                                                                         ||
@@ -63,7 +34,36 @@
 ||                                                                         ||
 ||-------------------------------------------------------------------------||
 ||                                                                         ||
-|| Footer: next view in flow                                               ||
+|| Select: flow                                                            ||
+||   * start                                                               ||
+||   * help                                                                ||
+||   * about                                                               ||
+||   * settings                                                            ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||                                                                         ||
+||-------------------------------------------------------------------------||
+||                                                                         ||
+|| Footer: forward to selection                                            ||
 ||                                                                         ||
 \ ------------------------------------------------------------------------- /
  ---------------------------------------------------------------------------
