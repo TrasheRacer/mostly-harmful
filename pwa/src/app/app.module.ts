@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LanguageComponent } from './language/language.component';
 import { CountryComponent } from './country/country.component';
+import { DisplayComponent } from './home/display/display.component';
+import { SelectComponent } from './home/select/select.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { CountryComponent } from './country/country.component';
     HomeComponent,
     LanguageComponent,
     CountryComponent,
-    NavigationComponent
+    NavigationComponent,
+    DisplayComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
