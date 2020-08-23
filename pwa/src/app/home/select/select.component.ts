@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { SelectedFlow } from '../home.component';
 
 @Component({
   selector: 'home-select',
   templateUrl: './select.component.html',
   styleUrls: ['./select.component.less']
 })
-export class SelectComponent implements OnInit {
+export class SelectComponent {
+
+  @Output() selected = new EventEmitter<SelectedFlow>();
 
   constructor() { }
 
-  ngOnInit(): void {
+  select(selected: SelectedFlow): void {
+    this.selected.emit(selected)
   }
-
 }

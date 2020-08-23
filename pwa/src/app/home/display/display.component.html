@@ -1,1 +1,11 @@
-<p>home display works!</p>
+<div class="row row-display" [ngSwitch]="selected">
+    <div class="col col-start" *ngSwitchCase="'start'">
+        user selected start!
+    </div>
+    <div class="col col-about" *ngSwitchCase="'about'">
+        user selected about!
+    </div>
+    <div class="col col-default" *ngSwitchDefault>
+        user has not yet selected anything!
+    </div>
+</div>

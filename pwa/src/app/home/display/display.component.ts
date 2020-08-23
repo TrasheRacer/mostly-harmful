@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SelectedFlow } from '../home.component';
 
 @Component({
   selector: 'home-display',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display.component.less']
 })
 export class DisplayComponent implements OnInit {
+
+  @Input() selected: SelectedFlow;
 
   constructor() { }
 
