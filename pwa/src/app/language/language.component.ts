@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SelectLanguageComponent } from './select-language/select-language.component';
+import { TranslateService } from '@ngx-translate/core';
 
-export type SelectedLanguage = 'english' | 'german';
+export type Language = 'english' | 'german';
 
 @Component({
   selector: 'app-language',
@@ -10,11 +11,11 @@ export type SelectedLanguage = 'english' | 'german';
 })
 export class LanguageComponent {
 
-  selected: SelectedLanguage;
+  selected: Language;
 
-  constructor() { }
+  constructor() {}
 
-  onSelected(selected: SelectedLanguage): void {
+  onSelected(selected: Language): void {
     this.selected = selected;
   }
 }

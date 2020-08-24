@@ -1,9 +1,9 @@
 <div class="row" [ngSwitch]="selected">
     <div class="col" *ngSwitchCase="'english'">
-        Accept English language?
+        <button (click)="accept('english')">Accept English language?</button>
     </div>
     <div class="col" *ngSwitchCase="'german'">
-        Accept German language?
+        <button (click)="accept('german')">Accept German language?</button>
     </div>
     <div class="col" *ngSwitchDefault>
         Select a language!

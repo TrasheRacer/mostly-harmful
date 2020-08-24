@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SelectedLanguage } from '../language.component';
+import { Language } from '../language.component';
+import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forward-language',
@@ -8,8 +10,14 @@ import { SelectedLanguage } from '../language.component';
 })
 export class ForwardLanguageComponent {
 
-  @Input() selected: SelectedLanguage;
+  @Input() selected: Language;
 
-  constructor() { }
+  constructor(private router: Router, private translateService: TranslateService) { }
+
+  accept(accepted: Language): void {
+    console.log('accepted language', accepted);
+    this.translateService.use(accepted);
+    this.router.navigateByUrl('/home');
+  }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { SelectedLanguage } from '../language.component';
+import { Language } from '../language.component';
 
 @Component({
   selector: 'app-select-language',
@@ -8,11 +8,11 @@ import { SelectedLanguage } from '../language.component';
 })
 export class SelectLanguageComponent {
 
-  @Output() selected = new EventEmitter<SelectedLanguage>();
+  @Output() selected = new EventEmitter<Language>();
 
   constructor() { }
 
-  select(selected: SelectedLanguage): void {
+  select(selected: Language): void {
     this.selected.emit(selected);
   }
 }
