@@ -17,6 +17,9 @@ import { ForwardComponent } from './home/forward/forward.component';
 import { SelectLanguageComponent } from './language/select-language/select-language.component';
 import { DisplayLanguageComponent } from './language/display-language/display-language.component';
 import { ForwardLanguageComponent } from './language/forward-language/forward-language.component';
+import { StateSelectComponent } from './country/state-select/state-select.component';
+import { StateDisplayComponent } from './country/state-display/state-display.component';
+import { StateConfirmComponent } from './country/state-confirm/state-confirm.component';
 
 function createTranslateLoader(httpClient: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -34,7 +37,10 @@ function createTranslateLoader(httpClient: HttpClient): TranslateHttpLoader {
     ForwardComponent,
     SelectLanguageComponent,
     DisplayLanguageComponent,
-    ForwardLanguageComponent
+    ForwardLanguageComponent,
+    StateSelectComponent,
+    StateDisplayComponent,
+    StateConfirmComponent
   ],
   imports: [
     BrowserModule,

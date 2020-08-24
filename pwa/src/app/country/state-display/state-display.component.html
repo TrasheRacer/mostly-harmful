@@ -1,0 +1,11 @@
+<div class="row" [ngSwitch]="selected">
+    <div class="col" *ngSwitchCase="'england'">
+        {{ "state.display.england" | translate }}
+    </div>
+    <div class="col" *ngSwitchCase="'bayern'">
+        {{ "state.display.bayern" | translate }}
+    </div>
+    <div class="col" *ngSwitchDefault>
+        {{ "state.display.default" | translate }}
+    </div>
+</div>

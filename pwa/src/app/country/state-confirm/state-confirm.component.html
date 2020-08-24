@@ -1,0 +1,12 @@
+<div class="row" [ngSwitch]="selected">
+    <div class="col" *ngSwitchCase="'england'">
+        <button (click)="accept('england')">{{ "state.confirm.england" | translate }}
+        </button>
+    </div>
+    <div class="col" *ngSwitchCase="'bayern'">
+        <button (click)="accept('bayern')">{{ "state.confirm.bayern" | translate }}</button>
+    </div>
+    <div class="col" *ngSwitchDefault>
+        {{ "state.confirm.default" | translate }}
+    </div>
+</div>
