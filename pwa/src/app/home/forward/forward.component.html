@@ -1,11 +1,11 @@
 <div class="row row-forward" [ngSwitch]="selected">
-    <div i18n="forward-flow" class="col col-start" *ngSwitchCase="'start'">
-        Forward to start flow (not yet implemented)!
+    <div class="col col-start" *ngSwitchCase="'start'">
+        forward to start flow (not yet implemented)!
     </div>
-    <div i18n="forward-about" class="col col-about" *ngSwitchCase="'about'">
-        Forward to view about (not yet implemented)!
+    <div class="col col-about" *ngSwitchCase="'about'">
+        forward to about view (not yet implemented)!
     </div>
-    <div i18n="select-something" class="col col-default" *ngSwitchDefault>
-        Select something!
+    <div class="col col-default" *ngSwitchDefault>
+        cannot go forward until you select something!
     </div>
 </div>
