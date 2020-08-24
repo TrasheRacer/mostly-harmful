@@ -1,8 +1,8 @@
 {
     "navigation": {
-        "language": "Sprache anschauen?",
-        "home": "Home anschauen?",
-        "country": "Land anschauen?"
+        "language": "Sprache",
+        "home": "Home",
+        "country": "Land"
     },
     "home": {
         "display": {

@@ -1,8 +1,8 @@
 {
     "navigation": {
-        "language": "View language?",
-        "home": "View home?",
-        "country": "View country?"
+        "language": "Language",
+        "home": "Home",
+        "country": "Country"
     },
     "home": {
         "display": {
