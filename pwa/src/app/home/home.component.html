@@ -1,6 +1,4 @@
 <app-navigation></app-navigation>
 <home-display [selected]="selected" ></home-display>
 <home-select (selected)="onSelected($event)"></home-select>
-<div class="row row-footer">
-    <div class="col col-forward">forward</div>
-</div>
+<home-forward [selected]="selected"></home-forward>

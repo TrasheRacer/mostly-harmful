@@ -10,6 +10,7 @@ import { LanguageComponent } from './language/language.component';
 import { CountryComponent } from './country/country.component';
 import { DisplayComponent } from './home/display/display.component';
 import { SelectComponent } from './home/select/select.component';
+import { ForwardComponent } from './home/forward/forward.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SelectComponent } from './home/select/select.component';
     CountryComponent,
     NavigationComponent,
     DisplayComponent,
-    SelectComponent
+    SelectComponent,
+    ForwardComponent
   ],
   imports: [
     BrowserModule,
