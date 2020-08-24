@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-export type SelectedFlow = 'none' | 'start' | 'about';
+export type SelectedFlow = 'start' | 'about';
 
 @Component({
   selector: 'app-home',
@@ -9,11 +9,11 @@ export type SelectedFlow = 'none' | 'start' | 'about';
 })
 export class HomeComponent {
 
-  selected: SelectedFlow = 'none'
+  selected: SelectedFlow;
 
   constructor() { }
 
   onSelected(selected: SelectedFlow): void {
-    this.selected = selected
+    this.selected = selected;
   }
 }

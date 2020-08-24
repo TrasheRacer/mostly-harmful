@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { SelectLanguageComponent } from './select-language/select-language.component';
+
+export type SelectedLanguage = 'english' | 'german';
 
 @Component({
   selector: 'app-language',
   templateUrl: './language.component.html',
   styleUrls: ['./language.component.less']
 })
-export class LanguageComponent implements OnInit {
+export class LanguageComponent {
+
+  selected: SelectedLanguage;
 
   constructor() { }
 
-  ngOnInit(): void {
+  onSelected(selected: SelectedLanguage): void {
+    this.selected = selected;
   }
-
 }

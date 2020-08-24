@@ -1,0 +1,11 @@
+<div class="row" [ngSwitch]="selected">
+    <div class="col" *ngSwitchCase="'english'">
+        Accept English language?
+    </div>
+    <div class="col" *ngSwitchCase="'german'">
+        Accept German language?
+    </div>
+    <div class="col" *ngSwitchDefault>
+        Select a language!
+    </div>
+</div>
