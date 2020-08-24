@@ -1,11 +1,12 @@
 <div class="row row-display" [ngSwitch]="selected">
     <div class="col col-start" *ngSwitchCase="'start'">
-        user selected start!
+        <p i18n="selected-start">Selected start!</p>
     </div>
     <div class="col col-about" *ngSwitchCase="'about'">
-        user selected about!
+        <p i18n="selected-about">Selected about!</p>
+
     </div>
     <div class="col col-default" *ngSwitchDefault>
-        user has not yet selected anything!
+        <p i18n="nothing-selected">Nothing selected!</p>
     </div>
 </div>
