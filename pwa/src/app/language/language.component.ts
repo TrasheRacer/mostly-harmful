@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SelectLanguageComponent } from './select-language/select-language.component';
-import { TranslateService } from '@ngx-translate/core';
 
-export type Language = 'english' | 'german';
+export type Language = 'en' | 'de';
 
 @Component({
   selector: 'app-language',

@@ -1,11 +1,12 @@
 <div class="row" [ngSwitch]="selected">
-    <div class="col" *ngSwitchCase="'english'">
-        <button (click)="accept('english')">Accept English language?</button>
+    <div class="col" *ngSwitchCase="'en'">
+        <button (click)="accept('en')">{{ "language.confirm.english" | translate }}
+        </button>
     </div>
-    <div class="col" *ngSwitchCase="'german'">
-        <button (click)="accept('german')">Accept German language?</button>
+    <div class="col" *ngSwitchCase="'de'">
+        <button (click)="accept('de')">{{ "language.confirm.german" | translate }}</button>
     </div>
     <div class="col" *ngSwitchDefault>
-        Select a language!
+        {{ "language.confirm.default" | translate }}
     </div>
 </div>

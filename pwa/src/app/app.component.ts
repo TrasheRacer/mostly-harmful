@@ -10,6 +10,10 @@ export class AppComponent {
   title = 'pwa';
 
   constructor(private translateService: TranslateService) {
-    this.translateService.use('english');
+    translateService.addLangs(['en', 'fr']);
+    translateService.setDefaultLang('en');
+
+    const browserLang = translateService.getBrowserLang();
+    translateService.use(browserLang.match(/en|fr/) ? browserLang : 'en');
   }
 }

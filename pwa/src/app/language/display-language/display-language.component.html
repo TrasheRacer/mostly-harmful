@@ -1,11 +1,11 @@
 <div class="row" [ngSwitch]="selected">
     <div class="col" *ngSwitchCase="'english'">
-        Selected English language!
+        {{ "language.display.english" | translate }}
     </div>
     <div class="col" *ngSwitchCase="'german'">
-        Selected German language!
+        {{ "language.display.german" | translate }}
     </div>
     <div class="col" *ngSwitchDefault>
-        No language selected!
+        {{ "language.display.default" | translate }}
     </div>
 </div>
