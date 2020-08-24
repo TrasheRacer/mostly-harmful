@@ -1,11 +1,11 @@
 <div class="row row-display" [ngSwitch]="selected">
     <div class="col col-start" *ngSwitchCase="'start'">
-        Selected start flow!
+        {{ "home.display.flow" | translate }}
     </div>
     <div class="col col-about" *ngSwitchCase="'about'">
-        Selected view about!
+        {{ "home.display.about" | translate }}
     </div>
     <div class="col col-default" *ngSwitchDefault>
-        Nothing selected!
+        {{ "home.display.default" | translate }}
     </div>
 </div>

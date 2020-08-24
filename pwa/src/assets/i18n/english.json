@@ -1,7 +1,39 @@
 {
     "navigation": {
-        "view-language": "View language?",
-        "view-home": "View home?",
-        "view-country": "View country?"
+        "language": "View language?",
+        "home": "View home?",
+        "country": "View country?"
+    },
+    "home": {
+        "display": {
+            "default": "Nothing selected!",
+            "flow": "Selected flow!",
+            "about": "Selected about!"
+        },
+        "select": {
+            "flow": "Flow!",
+            "about": "About!"
+        },
+        "confirm": {
+            "default": "Select something!",
+            "flow": "Start flow?",
+            "about": "View about?"
+        }
+    },
+    "language": {
+        "display": {
+            "default": "Nothing selected!",
+            "english": "Selected English!",
+            "german": "Selected German!"
+        },
+        "select": {
+            "english": "English!",
+            "german": "German!"
+        },
+        "confirm": {
+            "default": "Select something!",
+            "english": "Accept English?",
+            "german": "Accept German?"
+        }
     }
 }
