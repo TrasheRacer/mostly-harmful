@@ -1,4 +1,4 @@
-<div class="row" [ngSwitch]="selected">
+<div class="row row-confirm" [ngSwitch]="selected">
     <div class="col" *ngSwitchCase="'en'">
         <button (click)="accept('en')">{{ "language.confirm.english" | translate }}
         </button>

@@ -4,7 +4,6 @@ import { SelectedFlow } from '../home.component';
 @Component({
   selector: 'app-home-select',
   templateUrl: './select.component.html',
-  styleUrls: ['./select.component.less']
 })
 export class SelectComponent {
 

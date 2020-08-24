@@ -4,7 +4,6 @@ import { Language } from '../language.component';
 @Component({
   selector: 'app-select-language',
   templateUrl: './select-language.component.html',
-  styleUrls: ['./select-language.component.less']
 })
 export class SelectLanguageComponent {
 

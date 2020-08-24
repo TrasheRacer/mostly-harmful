@@ -4,7 +4,6 @@ import { State } from '../country.component';
 @Component({
   selector: 'app-state-display',
   templateUrl: './state-display.component.html',
-  styleUrls: ['./state-display.component.less']
 })
 export class StateDisplayComponent implements OnInit {
 

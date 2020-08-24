@@ -5,7 +5,6 @@ export type Language = 'en' | 'de';
 @Component({
   selector: 'app-language',
   templateUrl: './language.component.html',
-  styleUrls: ['./language.component.less']
 })
 export class LanguageComponent {
 

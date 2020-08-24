@@ -4,7 +4,6 @@ import { SelectedFlow } from '../home.component';
 @Component({
   selector: 'app-home-forward',
   templateUrl: './forward.component.html',
-  styleUrls: ['./forward.component.less']
 })
 export class ForwardComponent implements OnInit {
 

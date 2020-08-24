@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-state-confirm',
   templateUrl: './state-confirm.component.html',
-  styleUrls: ['./state-confirm.component.less']
 })
 export class StateConfirmComponent {
 

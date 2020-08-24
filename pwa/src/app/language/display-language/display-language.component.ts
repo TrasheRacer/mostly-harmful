@@ -4,7 +4,6 @@ import { SelectLanguageComponent } from '../select-language/select-language.comp
 @Component({
   selector: 'app-display-language',
   templateUrl: './display-language.component.html',
-  styleUrls: ['./display-language.component.less']
 })
 export class DisplayLanguageComponent {
 
