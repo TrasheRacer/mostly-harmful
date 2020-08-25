@@ -2,7 +2,7 @@
     "navigation": {
         "language": "Language",
         "home": "Home",
-        "country": "Country"
+        "country": "State"
     },
     "home": {
         "display": {
@@ -16,7 +16,8 @@
         },
         "confirm": {
             "default": "Select something!",
-            "flow": "Start flow?",
+            "flow-england": "Start flow for England?",
+            "flow-bayern": "Start flow for Bayern?",
             "about": "View about?"
         }
     },
@@ -31,9 +32,25 @@
             "german": "German!"
         },
         "confirm": {
-            "default": "Select something!",
+            "default": "Select your language!",
             "english": "Accept English?",
             "german": "Accept German?"
+        }
+    },
+    "state": {
+        "display": {
+            "default": "Nothing selected!",
+            "england": "Selected England!",
+            "bayern": "Selected Bayern!"
+        },
+        "select": {
+            "england": "England!",
+            "bayern": "Bayern!"
+        },
+        "confirm": {
+            "default": "Select your state!",
+            "england": "Accept England?",
+            "bayern": "Accept Bayern?"
         }
     }
 }
