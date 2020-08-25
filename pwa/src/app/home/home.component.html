@@ -1,4 +1,4 @@
-<app-navigation></app-navigation>
-<app-home-display [selected]="selected" ></app-home-display>
-<app-home-select (selected)="onSelected($event)"></app-home-select>
-<app-home-forward [selected]="selected"></app-home-forward>
+<app-navigation [state]="state"></app-navigation>
+<app-home-display [selected]="selected" [state]="state"></app-home-display>
+<app-home-select (selected)="onSelected($event)" [state]="state"></app-home-select>
+<app-home-forward [selected]="selected" [state]="state"></app-home-forward>

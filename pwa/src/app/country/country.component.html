@@ -1,4 +1,4 @@
-<app-navigation></app-navigation>
+<app-navigation [state]="selected"></app-navigation>
 <app-state-display [selected]="selected" ></app-state-display>
 <app-state-select (selected)="onSelected($event)"></app-state-select>
 <app-state-confirm [selected]="selected"></app-state-confirm>

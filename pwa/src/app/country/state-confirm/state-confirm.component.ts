@@ -13,8 +13,7 @@ export class StateConfirmComponent {
   constructor(private router: Router) { }
 
   accept(accepted: State): void {
-    console.log('accepted state', accepted);
-    this.router.navigateByUrl('/home', { queryParams: { state: accepted } });
+    this.router.navigate(['/home', { state: accepted }]);
   }
 
 }

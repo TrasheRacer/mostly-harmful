@@ -5,17 +5,26 @@
         </div>
     </a> -->
     <div class="col col-language">
-        <a [routerLink]="['/language']">
+        <a *ngIf="state" [routerLink]="['/language', state]">
+            {{ "navigation.language" | translate }}
+        </a>
+        <a *ngIf="!state" [routerLink]="['/language']">
             {{ "navigation.language" | translate }}
         </a>    
     </div>
     <div class="col col-home">
-        <a [routerLink]="['/home']">
+        <a *ngIf="state" [routerLink]="['/home', state]">
+            {{ "navigation.home" | translate }}
+        </a>
+        <a *ngIf="!state" [routerLink]="['/home']">
             {{ "navigation.home" | translate }}
         </a>
     </div>
     <div class="col col-country">
-        <a [routerLink]="['/country']">
+        <a *ngIf="state" [routerLink]="['/country', state]">
+            {{ "navigation.country" | translate }}
+        </a>
+        <a *ngIf="!state" [routerLink]="['/country']">
             {{ "navigation.country" | translate }}
         </a>
     </div>

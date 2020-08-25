@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 export type State = 'england' | 'bayern';
 
@@ -10,9 +11,16 @@ export class CountryComponent{
 
   selected: State;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   onSelected(selected: State): void {
     this.selected = selected;
+  }
+
+  ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      const state = params.get('state');
+      if (state === 'england' || state === 'bayern') { this.selected = state; }
+    });
   }
 }

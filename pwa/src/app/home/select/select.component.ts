@@ -1,5 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { SelectedFlow } from '../home.component';
+import { State } from 'src/app/country/country.component';
 
 @Component({
   selector: 'app-home-select',
@@ -7,6 +8,7 @@ import { SelectedFlow } from '../home.component';
 })
 export class SelectComponent {
 
+  @Input() state: State;
   @Output() selected = new EventEmitter<SelectedFlow>();
 
   constructor() { }
