@@ -2,16 +2,11 @@
     <div class="col col-start" *ngSwitchCase="'start'">
         <p *ngIf="state == 'england'">{{ "home.confirm.flow-england" | translate }}</p>
         <p *ngIf="state == 'bayern'">{{ "home.confirm.flow-bayern" | translate }}</p>
-        <p *ngIf="!state">{{ "home.confirm.flow-none" | translate }}</p>
     </div>
     <div class="col col-about" *ngSwitchCase="'about'">
-        <p>
-            {{ "home.confirm.about" | translate }}
-        </p>
+        <p>{{ "home.confirm.about" | translate }}</p>
     </div>
     <div class="col col-default" *ngSwitchDefault>
-        <p>
-            {{ "home.confirm.default" | translate }}
-        </p>
+        <p>{{ "home.confirm.default" | translate }}</p>
     </div>
 </div>

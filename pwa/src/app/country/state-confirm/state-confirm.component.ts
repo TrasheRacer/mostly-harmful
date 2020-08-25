@@ -13,7 +13,7 @@ export class StateConfirmComponent {
   constructor(private router: Router) { }
 
   accept(accepted: State): void {
-    this.router.navigate(['/home', { state: accepted }]);
+    this.router.navigateByUrl('/home/' + accepted);
   }
 
 }

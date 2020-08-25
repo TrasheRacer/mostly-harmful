@@ -5,13 +5,10 @@ import {LanguageComponent} from './language/language.component';
 import { CountryComponent } from './country/country.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
   { path: 'home/:state', component: HomeComponent },
-  { path: 'language', component: LanguageComponent },
   { path: 'language/:state', component: LanguageComponent },
-  { path: 'country', component: CountryComponent },
   { path: 'country/:state', component: CountryComponent },
-  { path: '',   redirectTo: '/home', pathMatch: 'full' } // Redirect to `home`.
+  { path: '',   redirectTo: '/home/england', pathMatch: 'full' }
 ];
 
 @NgModule({
