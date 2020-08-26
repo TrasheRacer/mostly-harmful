@@ -13,6 +13,8 @@ import { AboutComponent } from './about/about.component';
 import { EthnicityComponent } from './identity/ethnicity/ethnicity.component';
 import { GenderComponent } from './identity/gender/gender.component';
 import { HelpComponent } from './help/help.component';
+import { GuideComponent } from './guide/guide.component';
+import { UploadComponent } from './upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { HelpComponent } from './help/help.component';
     EthnicityComponent,
     GenderComponent,
     HelpComponent,
+    GuideComponent,
+    UploadComponent,
   ],
   imports: [
     BrowserModule,
