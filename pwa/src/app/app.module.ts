@@ -20,6 +20,7 @@ import { ForwardLanguageComponent } from './language/forward-language/forward-la
 import { StateSelectComponent } from './country/state-select/state-select.component';
 import { StateDisplayComponent } from './country/state-display/state-display.component';
 import { StateConfirmComponent } from './country/state-confirm/state-confirm.component';
+import { ViewModule } from './view/view.module'
 
 function createTranslateLoader(httpClient: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -53,7 +54,8 @@ function createTranslateLoader(httpClient: HttpClient): TranslateHttpLoader {
         useFactory: createTranslateLoader,
         deps: [ HttpClient ]
       }
-    })
+    }),
+    ViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
