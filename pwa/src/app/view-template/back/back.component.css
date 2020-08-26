@@ -2,3 +2,8 @@
     border:3px dotted blueviolet;
     height: 10%;
 }
+
+.col {
+    border:1px dashed yellow;
+    text-align: center;
+}
