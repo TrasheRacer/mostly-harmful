@@ -8,7 +8,7 @@ import {Location} from '@angular/common';
 })
 export class BackComponent implements OnInit {
 
-  @Input() name: string
+  @Input() name: string;
 
   constructor(private location: Location) { }
 
@@ -16,7 +16,7 @@ export class BackComponent implements OnInit {
   }
 
   onClick(): void {
-    this.location.back()
+    this.location.back();
   }
 
 }

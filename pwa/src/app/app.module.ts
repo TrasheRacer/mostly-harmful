@@ -10,7 +10,7 @@ import { HeaderComponent } from './home/header/header.component';
 import { SettingsComponent } from './settings/settings.component';
 import { StartComponent } from './start/start.component';
 import { IdentityComponent } from './identity/identity.component';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [

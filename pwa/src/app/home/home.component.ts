@@ -7,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  name = 'home'
-  selection = 'none'
-  selectionList = ['self-id', 'get-help', 'settings', 'about']
+  name = 'home';
+  selection = 'none';
+  selectionList = ['self-id', 'get-help', 'settings', 'about'];
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  setSelection(selection: string) {
-    this.selection = selection
+  setSelection(selection: string): void {
+    this.selection = selection;
   }
 }

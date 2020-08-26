@@ -8,8 +8,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class ConfirmComponent implements OnInit {
 
-  @Input() name: string
-  @Input() selection: string
+  @Input() name: string;
+  @Input() selection: string;
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
@@ -17,7 +17,7 @@ export class ConfirmComponent implements OnInit {
   }
 
   onClick(selection: string): void {
-    this.router.navigate([selection], { relativeTo: this.activatedRoute })
+    this.router.navigate([selection], { relativeTo: this.activatedRoute });
   }
 
 }
