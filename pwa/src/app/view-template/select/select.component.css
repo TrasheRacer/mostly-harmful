@@ -3,7 +3,8 @@
     height: 40%;
 }
 
-.col {
+.col-4 {
     border:1px dashed yellow;
     text-align: center;
+    height: 50%;
 }
