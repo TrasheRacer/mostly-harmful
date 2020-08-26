@@ -1,0 +1,11 @@
+<app-back [name]="name"></app-back>
+
+<app-display [name]="name"
+    [selection]="selection"></app-display>
+
+<app-select [name]="name"
+    [selectionList]="selectionList" 
+    (selectionEvent)="onSelection($event)"></app-select>
+
+<app-confirm [name]="name"
+    [selection]="selection"></app-confirm>   

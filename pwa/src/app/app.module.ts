@@ -20,7 +20,7 @@ import { AboutComponent } from './about/about.component';
     SettingsComponent,
     StartComponent,
     IdentityComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
