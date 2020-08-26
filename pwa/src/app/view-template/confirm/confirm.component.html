@@ -1,3 +1,8 @@
-<div class="row">
-    <div class="col">forward</div>
+<div class="row" [ngSwitch]="selection">
+    <div class="col" *ngSwitchCase="'none'">
+        <p>select something!</p>
+    </div>
+    <div class="col" *ngSwitchDefault>
+        <button>click to open {{ selection }}</button>
+    </div>
 </div>
