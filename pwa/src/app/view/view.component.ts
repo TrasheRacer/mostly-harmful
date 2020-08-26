@@ -7,11 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
-  @Input() name: string
-  @Input() selectionList: string[]
-  @Input() save = false
+  @Input() name: string;
+  @Input() selectionList: string[];
+  @Input() save = false;
 
-  selection = 'none'
+  selection = 'none';
 
   constructor() { }
 

@@ -10,7 +10,7 @@ export class ConfirmComponent implements OnInit {
 
   @Input() name: string;
   @Input() selection: string;
-  @Input() save: boolean
+  @Input() save: boolean;
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
@@ -18,7 +18,7 @@ export class ConfirmComponent implements OnInit {
   }
 
   onClick(selection: string): void {
-    if (this.save) console.log('dummy saving: ', selection)
+    if (this.save) { console.log('dummy saving: ', selection); }
     this.router.navigate([selection], { relativeTo: this.activatedRoute });
   }
 
