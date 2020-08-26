@@ -2,10 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { NoSelection } from './../../globals'
 
-type FlowSelection = 'start' | 'about'
-
-type Selection = NoSelection | FlowSelection
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,7 +9,7 @@ type Selection = NoSelection | FlowSelection
 })
 export class HomeComponent implements OnInit {
 
-  selection: Selection
+  selection: string = 'none'
   thingList = ['thing-1', 'thing-2', 'thing-3', 'thing-4', 'thing-5', 'thing-6']
 
   constructor() { }
@@ -21,4 +17,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  setSelection(selection: string) {
+    this.selection = selection
+  }
 }

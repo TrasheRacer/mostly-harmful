@@ -1,3 +1,5 @@
 <div class="row">
-    <div class="col-4" *ngFor="let selection of selectionList">click to select {{ selection }}!</div>
+    <div class="col-4" *ngFor="let selection of selectionList">
+        <button (click)="onClick(selection)">click to select {{ selection }}!</button>
+    </div>
 </div>
