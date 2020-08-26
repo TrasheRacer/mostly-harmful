@@ -1,1 +1,4 @@
-<p>start works!</p>
+<app-back></app-back>
+<app-display [selection]="selection"></app-display>
+<app-select [selectionList]="selectionList" (selectionEvent)="setSelection($event)"></app-select>
+<app-confirm [selection]="selection"></app-confirm>

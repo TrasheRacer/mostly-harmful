@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
+  selection: string = 'none'
+  selectionList = ['set-language', 'set-legal-district', 'reset-user-id']
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  setSelection(selection: string) {
+    this.selection = selection
+  }
+
 
 }

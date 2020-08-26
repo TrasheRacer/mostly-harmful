@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
 
+  selection: string = 'none'
+  selectionList = ['self-identify', 'stream-audio', 'launch-guide', 'upload-event']
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setSelection(selection: string) {
+    this.selection = selection
   }
 
 }
