@@ -8,7 +8,7 @@ import {Location} from '@angular/common';
 })
 export class MenuComponent {
 
-  @Input() viewName: string
+  // @Input() viewName: string
 
   constructor(private location: Location) { }
 
