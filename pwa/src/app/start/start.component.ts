@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+// TODO: rename this to HelpComponent
 @Component({
   selector: 'app-start',
   templateUrl: './start.component.html',
@@ -7,17 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
 
-  name = 'help'; // TODO: rename this to HelpComponent
-  selection = 'none';
-  selectionList = ['record-video', 'stream-audio', 'launch-guide', 'upload-event'];
-
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  setSelection(selection: string): void {
-    this.selection = selection;
-  }
-
 }

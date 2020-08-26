@@ -7,11 +7,11 @@ import { IdentityComponent } from './identity/identity.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  { path: ':legalDistrict', component: HomeComponent },
-  { path: ':legalDistrict/self-id', component: IdentityComponent },
-  { path: ':legalDistrict/get-help', component: StartComponent },
-  { path: ':legalDistrict/settings', component: SettingsComponent },
-  { path: ':legalDistrict/about', component: AboutComponent },
+  { path: ':region', component: HomeComponent },
+  { path: ':region/identity', component: IdentityComponent },
+  { path: ':region/help', component: StartComponent },
+  { path: ':region/settings', component: SettingsComponent },
+  { path: ':region/about', component: AboutComponent },
   { path: '',   redirectTo: '/england', pathMatch: 'full' }
 ];
 

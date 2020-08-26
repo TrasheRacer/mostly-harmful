@@ -11,6 +11,8 @@ import { SettingsComponent } from './settings/settings.component';
 import { StartComponent } from './start/start.component';
 import { IdentityComponent } from './identity/identity.component';
 import { AboutComponent } from './about/about.component';
+import { EthnicityComponent } from './identity/ethnicity/ethnicity.component';
+import { GenderComponent } from './identity/gender/gender.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AboutComponent } from './about/about.component';
     StartComponent,
     IdentityComponent,
     AboutComponent,
+    EthnicityComponent,
+    GenderComponent,
   ],
   imports: [
     BrowserModule,

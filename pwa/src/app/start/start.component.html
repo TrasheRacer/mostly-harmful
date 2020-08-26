@@ -1,4 +1,2 @@
-<app-back [name]="name"></app-back>
-<app-display [selection]="selection" [name]="name"></app-display>
-<app-select [selectionList]="selectionList" (selectionEvent)="setSelection($event)" [name]="name"></app-select>
-<app-confirm [selection]="selection" [name]="name"></app-confirm>
+<app-view [name]="'home'"
+    [selectionList]="['identity', 'help', 'settings', 'about']"></app-view>
