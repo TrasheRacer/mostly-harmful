@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
 
   name = 'home'
   selection = 'none'
-  selectionList = ['start', 'settings']
+  selectionList = ['self-id', 'get-help', 'settings', 'about']
 
   constructor() { }
 

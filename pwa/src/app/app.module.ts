@@ -8,7 +8,9 @@ import { ViewTemplateModule } from './view-template/view-template.module';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { SettingsComponent } from './settings/settings.component';
-import { StartComponent } from './start/start.component'
+import { StartComponent } from './start/start.component';
+import { IdentityComponent } from './identity/identity.component';
+import { AboutComponent } from './about/about.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { StartComponent } from './start/start.component'
     HomeComponent,
     HeaderComponent,
     SettingsComponent,
-    StartComponent
+    StartComponent,
+    IdentityComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
