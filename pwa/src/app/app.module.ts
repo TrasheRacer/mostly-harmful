@@ -8,11 +8,11 @@ import { ViewTemplateModule } from './view-template/view-template.module';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { SettingsComponent } from './settings/settings.component';
-import { StartComponent } from './start/start.component';
 import { IdentityComponent } from './identity/identity.component';
 import { AboutComponent } from './about/about.component';
 import { EthnicityComponent } from './identity/ethnicity/ethnicity.component';
 import { GenderComponent } from './identity/gender/gender.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +20,11 @@ import { GenderComponent } from './identity/gender/gender.component';
     HomeComponent,
     HeaderComponent,
     SettingsComponent,
-    StartComponent,
     IdentityComponent,
     AboutComponent,
     EthnicityComponent,
     GenderComponent,
+    HelpComponent,
   ],
   imports: [
     BrowserModule,
