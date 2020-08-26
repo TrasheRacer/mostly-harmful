@@ -8,6 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class ConfirmComponent implements OnInit {
 
+  @Input() name: string
   @Input() selection: string
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) { }

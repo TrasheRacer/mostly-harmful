@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
+  name = 'settings'
   selection: string = 'none'
   selectionList = ['set-language', 'set-legal-district', 'reset-user-id']
 

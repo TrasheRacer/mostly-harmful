@@ -1,4 +1,4 @@
-<app-back></app-back>
-<app-display [selection]="selection" [name]="'start'"></app-display>
-<app-select [selectionList]="selectionList" (selectionEvent)="setSelection($event)"></app-select>
-<app-confirm [selection]="selection"></app-confirm>
+<app-back [name]="name"></app-back>
+<app-display [selection]="selection" [name]="name"></app-display>
+<app-select [selectionList]="selectionList" (selectionEvent)="setSelection($event)" [name]="name"></app-select>
+<app-confirm [selection]="selection" [name]="name"></app-confirm>

@@ -1,8 +1,10 @@
 <div class="row" [ngSwitch]="selection">
     <div class="col" *ngSwitchCase="'none'">
-        <p>select something!</p>
+        <p>"{{name}}.confirm.none" | translate</p>
     </div>
     <div class="col" *ngSwitchDefault>
-        <button (click)="onClick(selection)">open {{ selection }}</button>
+        <button (click)="onClick(selection)">
+            "{{name}}.confirm.{{selection}}" | translate
+        </button>
     </div>
 </div>

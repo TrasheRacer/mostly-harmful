@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
 
+  name = 'start' // TODO: rename this to HelpComponent
   selection: string = 'none'
   selectionList = ['self-identify', 'stream-audio', 'launch-guide', 'upload-event']
 

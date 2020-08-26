@@ -1,4 +1,4 @@
-<app-header></app-header>
-<app-display [selection]="selection" [name]="'home'"></app-display>
-<app-select [selectionList]="selectionList" (selectionEvent)="setSelection($event)"></app-select>
-<app-confirm [selection]="selection"></app-confirm>
+<app-header [name]="name"></app-header>
+<app-display [selection]="selection" [name]="name"></app-display>
+<app-select [selectionList]="selectionList" (selectionEvent)="setSelection($event)" [name]="name"></app-select>
+<app-confirm [selection]="selection" [name]="name"></app-confirm>

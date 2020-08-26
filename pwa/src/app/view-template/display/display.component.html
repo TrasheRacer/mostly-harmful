@@ -1,8 +1,8 @@
 <div class="row" [ngSwitch]="selection">
     <div class="col" *ngSwitchCase="'none'">
-        <p>"{{name}}.none" | translate</p>
+        <p>"{{name}}.display.none" | translate</p>
     </div>
     <div class="col" *ngSwitchDefault>
-        <p>"{{name}}.{{selection}}" | translate</p>
+        <p>"{{name}}.display.{{selection}}" | translate</p>
     </div>
 </div>

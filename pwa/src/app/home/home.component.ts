@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  selection: string = 'none'
+  name = 'home'
+  selection = 'none'
   selectionList = ['start', 'settings']
 
   constructor() { }
