@@ -1,4 +1,8 @@
 <div class="row" [ngSwitch]="selection">
-    <div class="col" *ngSwitchCase="'none'">nothing selected!</div>
-    <div class="col" *ngSwitchDefault>selected {{ selection }}</div>
+    <div class="col" *ngSwitchCase="'none'">
+        <p>"{{name}}.none" | translate</p>
+    </div>
+    <div class="col" *ngSwitchDefault>
+        <p>"{{name}}.{{selection}}" | translate</p>
+    </div>
 </div>
