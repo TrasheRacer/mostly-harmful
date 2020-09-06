@@ -14,6 +14,7 @@ This is purely a kickoff meeting for potential stakeholders.
   [✓] Ruben +49-176-67805663: Informatik student & activist, Munich  
   [✓] Nahom +44-7751-655971: London  
   [✓] Johnny +44 7531 368067: XR activist, London  
+  [✓] Mick +31-6-33633610: Forensics student, Amsterdam  
   [ ] Johnny: BLM activist, Munich  
   [ ] Ben: Software developer, London  
   [ ] Emma: London  
