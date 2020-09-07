@@ -1,29 +1,27 @@
-# MostlyHarmful v1.0
-An online assistant for interaction with law enforcement.
+# An open-source anti-racist research project on the police
 
 ## Description
-
-### What does this project do?
-This project aims to create a responsive web application which assists the user when interacting with law enforcment officials.
-#### Mobile phone
+This project aims to create a web application which assists the user when interacting with law enforcment officials.
+### Mobile phone application
 The mobile phone version of the application proivdes the user with assistance.
-A tag-based UI can be used to provide:
-* nature of the interaction (pulled over, stop and search, ...)
-* anonymous demographics of the user (PoC, disabled, ...)
-* identities of officials involved (badge number, name, ...)
-* official vehicles (registration plate, make, colour, ...)
+The following data may be collected:
+  * nature of the interaction (pulled over, stop and search, ...)  
+  * anonymous demographics of the user (PoC, disabled, ...)  
+  * identities of officials involved (badge number, name, ...)  
+  * official vehicles (registration plate, make, colour, ...)  
 
-The flow uses this information to provide the user with appropriate legal advice.
-The user may also upload everything to our server.
-Metadata such as location and time will also be collected with consent.
-Each user has a replacable randomly-generated nickname with which they can identify themselves.
-#### Laptop or desktop computer
+The flow uses this information to provide the user with appropriate legal advice.  
+The user may also upload everything to our server.  
+Metadata such as location and time will also be collected with consent.  
+Each user has a replacable randomly-generated nickname with which they can identify themselves.  
+This can be kept private or shared with trused third parties.  
+### Laptop or desktop computer
 From a computer, this application provides access to uploaded data.
-A user can search records within a country by nickname.
-#### API
-Access to the API is available to the public for research purposes.
+A user can search records within a country for a given date by nickname.
+### API
+Access to the API is available to the public for research purposes and the development of countermeasures.
 
-### Why is this project useful?
+## Why is this project useful?
 #### Providing a service for the user
 This project aims to change the balance of power between law enforcment officials and the general public in favour of the latter.
 Officials receive schooling on the subject, and so are usually better informed on the law than the public.
@@ -67,3 +65,6 @@ or non-technical roles such as:
 * legal advice,
 
 please get in touch via Signal at +49 176 345 48857.
+
+## Monetisation potential
+

@@ -1,25 +1,27 @@
 # Kickoff meeting
 This document is written in Markdown.  
+With consent, this meeting will be recorded to Dropbox for the purpose of note-taking.
+It will be deleted afterwards and the meeting notes will be made available.
 
-## Proposed date: Saturday 12th September 2020
-## Proposed time: 13:00 UTC (14:00 UK @ UTC + 1, 15:00 Germany/Netherlands @ UTC + 2)
-## Video conference software: Jitsi @ https://jitsi.org/ (no download required)
+### Proposed date: Saturday 12th September 2020
+### Proposed time: 13:00 UTC (14:00 UK @ UTC + 1, 15:00 Germany/Netherlands @ UTC + 2)
+### Video conference software: Jitsi @ https://jitsi.org/ (no download required)
 
-## Invitees
+## Attendees
 No commitment in terms of time or anything else is expected!  
 This is purely a kickoff meeting for potential stakeholders.  
   [✓] Jake +49-176-34548857: Software developer, Munich/Amsterdam  
   [✓] Malka +49-163-2716301: Forensics student, Amsterdam  
   [✓] David +44-7837-616048: Lawyer, London  
   [✓] Ruben +49-176-67805663: Informatik student & activist, Munich  
-  [✓] Nahom +44-7751-655971: London  
+  [✓] Nahom +44-7751-655971: Salesforce developer, London  
   [✓] Johnny +44 7531 368067: XR activist, London  
   [✓] Mick +31-6-33633610: Forensics student, Amsterdam  
-  [ ] Johnny: BLM activist, Munich  
   [ ] Ben: Software developer, London  
   [ ] Emma: London  
   [ ] Will: London  
   [ ] Becca: Newcastle  
+  [X] Johnny: BLM activist, Munich  
   [X] Jannis: Munich  
 
 ## Project overview
@@ -46,21 +48,27 @@ Data may also enable development of active countermeasures to overpolicing.
 * Product ownership
 * System architechture
 * Dev-ops
-* Legal
+* Legal advice
 * Organisers:  England, Bavaria, Holland
-* Translators: English, Polish, German, Dutch
-* Marketing
+* Translators: English, Polish, German, Dutch  
+* Marketing  
+* Networking with Rotehilfe, the Netherlands Forensic Institute, ...  
 * ...
 
 ### Current state
 Dummy mobile phone app live @ https://www.mostlyharmful.org/home.  
 First release candidate is under construction.  
 Readme document for open-source has been drafted.
+FAQ document is being drafted.
+Pending involvement of Cory Doctorow (of the Electronic Fronteir Foundation)
 
 ## Agenda
-### Agree on decision-making process
-### Decide who does which role(s)
+### Individual introductions
+### Overview of project as it stands
+### Agreement on consensus-reaching procedure
+### ...
 ### Organisational planning
 ### Technical planning
 ### ...
-### Set up next meeting, with action items
+### Create action items
+### Set up next meeting
