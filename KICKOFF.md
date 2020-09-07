@@ -58,9 +58,8 @@ Data may also enable development of active countermeasures to overpolicing.
 ### Current state
 Dummy mobile phone app live @ https://www.mostlyharmful.org/home.  
 First release candidate is under construction.  
-Readme document for open-source has been drafted.
-FAQ document is being drafted.
-Pending involvement of Cory Doctorow (of the Electronic Fronteir Foundation)
+Project FAQ available over Signal
+Also on GitHub (https://github.com/TrasheRacer/mostly-harmful, private repo, ask for access)  
 
 ## Agenda
 ### Individual introductions
