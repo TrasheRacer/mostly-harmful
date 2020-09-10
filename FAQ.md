@@ -133,3 +133,12 @@ lived experiences. This is obviously a huge problem.
 We aim to minimise the risk of a harmful UX by setting two key goals as an organisation:    
 - to be anti-racist
 - to be as inclusive as possible
+
+### Other factors leading to user injury or death
+Due to the very nature of the project, the very use of the app may result in violence towards the user.  
+Unfortunatly there does not appear to be a technical fix for this.  
+Speculative ideas for discreet use of the app via wearables or voice control are possible but not reliable.  
+Of importance here are the publicity of and the narrative surrounding this project,  
+which may play a part in public and police perception of the app.  
+Having a large and diverse user base (including those in the political mainstream) may also help create a  
+cultural perception of this project which encourages it's safe use.  

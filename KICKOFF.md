@@ -1,5 +1,4 @@
 # Kickoff meeting
-This document is written in Markdown.  
 With consent, this meeting will be recorded to Dropbox for the purpose of note-taking.
 It will be deleted afterwards and the meeting notes will be made available.
 
@@ -17,7 +16,7 @@ This is purely a kickoff meeting for potential stakeholders.
   [✓] Nahom +44-7751-655971: Salesforce developer, London  
   [✓] Johnny +44 7531 368067: XR activist, London  
   [✓] Mick +31-6-33633610: Forensics student, Amsterdam  
-  [ ] Ben: Software developer, London  
+  [?] Ben: Software developer, London  
   [ ] Emma: London  
   [ ] Will: London  
   [ ] Becca: Newcastle  
